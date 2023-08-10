@@ -27,5 +27,7 @@ INSERT INTO PRODUTOS ( CODIGO, NOME, TIPO, QUANTIDADE, VALOR ) VALUES ( 10,'MOUS
 desc produtos;
 
 
-select * from produtos;
-		
+-- 1. Aumente em 12% o valor dos produtos cujos nomes iniciem com a letra 'F'
+
+
+
