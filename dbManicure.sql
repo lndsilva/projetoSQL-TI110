@@ -57,3 +57,17 @@ delete from tbProdutos where codProd = 3;
 
 -- Visualizar os registros excluidos
 select * from tbProdutos;
+
+
+
+
+
+
+-- 3. Escreva um comando que exiba todas as colunas e todas as linhas da tabela ANIMAIS.
+
+select * from tbProdutos;
+
+-- 4. Escreva um comando que exiba apenas as colunas TIPO e NOME da tabela ANIMAIS,
+-- apresentando todos os registros da tabela.
+
+
