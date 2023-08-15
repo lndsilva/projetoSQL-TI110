@@ -106,6 +106,8 @@ insert into tbVendas(codUsu,codCli,codProd,dataVenda,quantidade,valorTotal)
 	values(1,2,1,'2023/08/10',20,30.00);
 insert into tbVendas(codUsu,codCli,codProd,dataVenda,quantidade,valorTotal)
 	values(1,2,1,'2023/08/10',10,30.00);
+insert into tbVendas(codUsu,codCli,codProd,dataVenda,quantidade,valorTotal)
+	values(1,2,1,'2023/08/15',10,30.00);
 
 -- Pesquisando tabelas
 
