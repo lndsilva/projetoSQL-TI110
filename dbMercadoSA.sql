@@ -1,4 +1,4 @@
-drop database dbMercadoSA;
+-- drop database dbMercadoSA;
 
 create database dbMercadoSA;
 
@@ -117,3 +117,65 @@ select * from tbFornecedores;
 select * from tbUsuarios;
 select * from tbProdutos;
 select * from tbVendas;
+
+-- inner join
+
+
+select usu.nome as 'Nome do usuário',
+ func.nome as 'Nome do funcionário',
+ func.email as 'E-mail do funcionário' 
+ from tbUsuarios as usu 
+inner join tbFuncionarios as func
+on usu.codFunc = func.codFunc;
+
+
+select forn.nome, forn.cnpj, prod.descricao 
+from tbProdutos as prod 
+inner join tbFornecedores as forn 
+on prod.codForn = forn.codForn;
+
+select cli.nome, cli.email, cli.telCel, 
+vend.dataVenda, vend.valorTotal 
+from tbVendas vend 
+inner join tbClientes as cli on vend.codCli = cli.codCli;
+
+select cli.nome,cli.email, 
+prod.descricao, vend.dataVenda 
+from tbVendas as vend
+inner join tbClientes as cli 
+on vend.codCli = cli.codCli
+inner join tbProdutos as prod 
+on vend.codProd = prod.codProd
+where vend.codVenda = 1;
+
+select cli.nome,cli.email, 
+prod.descricao, vend.dataVenda 
+from tbVendas as vend
+inner join tbClientes as cli 
+on vend.codCli = cli.codCli
+inner join tbProdutos as prod 
+on vend.codProd = prod.codProd
+where prod.descricao like '%b%';
+
+-- Perguntando para tabela de usuários
+-- nome do usuário
+-- nome do funcionário
+-- data da venda
+-- quantidade vendida
+-- valor total da venda
+
+-- Perguntando para tabela de clientes
+-- nome do cliente
+-- data da venda
+-- nome do produto
+-- nome do fornecedor
+
+-- Perguntando para tabela de funcionarios
+-- nome do funcionário
+-- nome do usuário
+-- data da venda
+-- valor total
+-- nome do produto
+-- data da entrada
+-- nome do fornecedor
+-- cnpj do fornecedor
