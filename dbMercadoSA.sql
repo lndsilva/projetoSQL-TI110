@@ -179,3 +179,17 @@ where prod.descricao like '%b%';
 -- data da entrada
 -- nome do fornecedor
 -- cnpj do fornecedor
+
+-- Pergunta para tabela funcionarios qual os produtos cadastrados
+
+select prod.descricao, prod.quantidade from tbFuncionarios as func
+left join tbProdutos as prod on func.codFunc = prod.codProd;
+
+select prod.descricao, prod.quantidade from tbFuncionarios as func
+right join tbProdutos as prod on func.codFunc = prod.codProd;
+
+select prod.descricao, prod.quantidade from tbFuncionarios as func
+inner join tbProdutos as prod on func.codFunc = prod.codProd;
+
+select prod.descricao, prod.quantidade from tbVendas as vend
+inner join tbProdutos as prod on vend.codProd = prod.codProd;
