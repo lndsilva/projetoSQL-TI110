@@ -19,4 +19,19 @@ cidade varchar(100),
 primary key(codFunc)
 );
 
-insert into tbFuncionarios(nome,email,cpf,dNasc,endereco, cep,numero,bairro,estado,cidade)values();
+-- insert into tbFuncionarios(nome,email,cpf,dNasc,endereco, cep,numero,bairro,estado,cidade)values();
+
+-- Busca por código
+select * from tbFuncionarios where codFunc = 1;
+
+-- Busca por nome
+
+select nome from tbFuncionarios where nome like '%m%';
+
+-- Inserir um campo de código não existente
+
+select codFunc+1 from tbFuncionarios order by codFunc desc;
+
+-- buscar funcionarios
+
+-- select * from tbFuncionarios where nome = "@nome";
