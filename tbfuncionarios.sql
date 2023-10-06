@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 05/10/2023 às 22:07
+-- Tempo de geração: 06/10/2023 às 21:00
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -47,7 +47,7 @@ CREATE TABLE `tbfuncionarios` (
 
 INSERT INTO `tbfuncionarios` (`codFunc`, `nome`, `email`, `cpf`, `dNasc`, `endereco`, `cep`, `numero`, `bairro`, `estado`, `cidade`) VALUES
 (1, 'José Antunes Miranda', 'jose@amiranda@hotmail.com', '313.131.313-12', '1975-11-30', 'Rua Doutor Antônio Bento', '04750-000', '355', 'Santo Amaro', 'SP', 'São Paulo'),
-(2, 'Monica da Silva', 'monica.silva@gmail.com', '466.465.465-46', '2008-08-25', 'Largo Treze de Maio', '04751-000', '25', 'Santo Amaro', 'SP', 'São Paulo'),
+(2, 'Monica da Silva Souza', 'monica.ssouza@gmail.com', '466.465.465-46', '2007-07-26', 'Largo Treze de Maio', '04751-000', '25', 'Santo Amaro', 'SP', 'São Paulo'),
 (3, 'Fernando Teles Souza', 'fernando.tsouza@hotmail.com', '258.963.741-25', '1985-07-03', 'Rua Jurci Soares Sebastião', '04752-000', '254', 'Santo Amaro', 'SP', 'São Paulo'),
 (4, 'Natália dos Santos Nascimento', 'natalia.snascimento@gmail.com', '646.431.313-13', '2004-08-03', 'Rua Barão do Rio Branco', '04753-000', '232', 'Santo Amaro', 'SP', 'São Paulo');
 

@@ -1,4 +1,4 @@
-drop database dbLojaABC;
+-- drop database dbLojaABC;
 
 create database dbLojaABC;
 
@@ -35,3 +35,14 @@ select codFunc+1 from tbFuncionarios order by codFunc desc;
 -- buscar funcionarios
 
 -- select * from tbFuncionarios where nome = "@nome";
+
+-- Alterar funcionarios
+
+-- update tbFuncionarios set nome = @nome, email = @email, cpf = @cpf, dNasc = @dNasc, endereco = @endereco, cep = @cep, numero = @numero,	bairro = @bairro, estado = @estado, cidade = @cidade where codFunc = @codFunc;
+
+
+-- excluindo funcionarios
+
+delete from tbFuncionarios where codFunc = @codFunc;
+
+
