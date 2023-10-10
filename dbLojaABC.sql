@@ -30,8 +30,14 @@ foreign key(codFunc) references tbFuncionarios(codFunc));
 
 insert into tbUsuarios(usuario,senha,codFunc)values('admin','admin',1);
 
+	select func.nome from tbUsuarios as usu 
+	inner join tbFuncionarios as func 
+	on usu.codFunc = func.codFunc where func.nome like '%Moni%';
+
 
 select * from tbUsuarios where usuario = 'admin' and senha = 'admin';
+
+select usu.usuario, usu.senha, func.codFunc from tbFuncionarios as func inner join tbUsuarios as usu on func.codFunc = usu.codFunc where func.nome = 'Monica da Silva Souza';
 
 
 -- insert into tbFuncionarios(nome,email,cpf,dNasc,endereco, cep,numero,bairro,estado,cidade)values();
