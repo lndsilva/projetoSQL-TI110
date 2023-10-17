@@ -34,6 +34,9 @@ insert into tbUsuarios(usuario,senha,codFunc)values('admin','admin',1);
 	inner join tbFuncionarios as func 
 	on usu.codFunc = func.codFunc where func.nome like '%Moni%';
 
+-- Alterar usuarios
+
+-- update into tbUsuarios set usuario = @usuario, senha = @senha where codUsu = @codUsu;
 
 select * from tbUsuarios where usuario = 'admin' and senha = 'admin';
 
